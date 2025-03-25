@@ -34,17 +34,30 @@ func parseArticles(baseUrl string, doc *goquery.Document, locator string) []RSSI
 		title := s.Find("h2").Text()
 		link, _ := s.Find("a").Attr("href")
 		description := s.Find("p").Text()
+		coverImageLink, _ := s.Find("img").Attr("src")
 		pubDate := time.Now()
 
 		if timeString, exists := s.Find("time").Attr("content"); exists {
 			pubDate, _ = time.Parse(time.RFC3339Nano, timeString)
 		}
 
+		if !strings.HasPrefix(link, "/") {
+			link = baseUrl + link
+		}
+
+		if !strings.HasPrefix(coverImageLink, "/") {
+			coverImageLink = baseUrl + coverImageLink
+		}
+
 		newItem := RSSItem{
 			Title:       strings.TrimSpace(title),
-			Link:        baseUrl + link,
+			Link:        link,
 			Description: strings.TrimSpace(description),
 			PubDate:     pubDate.Format(time.RFC822),
+			MediaContent: MediaContent{
+				URL:    coverImageLink,
+				Medium: "image",
+			},
 		}
 		newItems = append(newItems, newItem)
 	})
@@ -55,7 +68,8 @@ func readExistingFeed(filename string) (*RSSDocument, error) {
 	// If feed file doesn't exist, return empty RSSDocument structure
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
 		return &RSSDocument{
-			Version: "2.0",
+			Version:    "2.0",
+			XMLNSMedia: "http://search.yahoo.com/mrss/", // Add media namespace
 			Channel: RSSChannel{
 				Title:       "Web Scraper Feed",
 				Description: "Automatically generated RSSDocument feed",
