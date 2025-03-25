@@ -3,23 +3,22 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"github.com/PuerkitoBio/goquery"
 	"log"
 	"net/http"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 func fetchWebsiteContent(url string) (*goquery.Document, error) {
-	// Send HTTP request to the website
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err
 	}
 	defer resp.Body.Close()
 
-	// Parse HTML using goquery
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return nil, err
@@ -76,18 +75,30 @@ func readExistingFeed(filename string) (*RSSDocument, error) {
 }
 
 func saveRSSFeed(filename string, feed *RSSDocument) error {
-	// Marshal RSS feed to XML
 	xmlData, err := xml.MarshalIndent(feed, "", "  ")
 	if err != nil {
 		return err
 	}
 
-	// Prepend XML header
 	xmlContent := []byte(xml.Header)
 	xmlContent = append(xmlContent, xmlData...)
 
-	// Write to file
 	return os.WriteFile(filename, xmlContent, 0644)
+}
+func appendWithoutDuplicates(existingItems []RSSItem, newItems []RSSItem) []RSSItem {
+	existingLinks := make(map[string]struct{})
+	for _, item := range existingItems {
+		existingLinks[item.Link] = struct{}{}
+	}
+
+	for _, item := range newItems {
+		if _, exists := existingLinks[item.Link]; !exists {
+			existingItems = append(existingItems, item)
+			existingLinks[item.Link] = struct{}{}
+		}
+	}
+
+	return existingItems
 }
 
 func main() {
@@ -107,10 +118,12 @@ func main() {
 			log.Fatal(err)
 		}
 		parsedItems := parseArticles(url, content, locator)
-		xmlFeed.Channel.Items = append(xmlFeed.Channel.Items, parsedItems...)
+
+		xmlFeed.Channel.Items = appendWithoutDuplicates(xmlFeed.Channel.Items, parsedItems)
 	}
+
 	err = saveRSSFeed(feedFileName, xmlFeed)
 	if err != nil {
-		log.Fatal(fmt.Errorf("error reading existing feed: %v", err))
+		log.Fatal(fmt.Errorf("error saving RSS feed: %v", err))
 	}
 }
