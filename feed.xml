@@ -3,7 +3,7 @@
   <channel>
     <title>Web Scraper Feed</title>
     <link></link>
-    <description>Automatically generated RSSDocument feed</description>
+    <description>Automatically generated RSS feed</description>
     <item>
       <title>Announcing Alerting</title>
       <link>https://blog.bitdrift.dev/post/announcing-alerting</link>

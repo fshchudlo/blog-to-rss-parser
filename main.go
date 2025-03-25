@@ -15,92 +15,99 @@ import (
 func fetchWebsiteContent(url string) (*goquery.Document, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to fetch website content: %w", err)
 	}
 	defer resp.Body.Close()
 
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to parse website content: %w", err)
 	}
 
 	return doc, nil
 }
 
-func parseArticles(baseUrl string, doc *goquery.Document, locator string) []RSSItem {
-	var newItems []RSSItem
+func parseArticles(baseURL string, doc *goquery.Document, locator string) []RSSItem {
+	var items []RSSItem
 
 	doc.Find(locator).Each(func(i int, s *goquery.Selection) {
-		title := s.Find("h2").Text()
+		title := strings.TrimSpace(s.Find("h2").Text())
 		link, _ := s.Find("a").Attr("href")
-		description := s.Find("p").Text()
+		description := strings.TrimSpace(s.Find("p").Text())
 		coverImageLink, _ := s.Find("img").Attr("src")
 		pubDate := time.Now()
 
 		if timeString, exists := s.Find("time").Attr("content"); exists {
-			pubDate, _ = time.Parse(time.RFC3339Nano, timeString)
+			if parsedTime, err := time.Parse(time.RFC3339Nano, timeString); err == nil {
+				pubDate = parsedTime
+			}
 		}
 
 		if strings.HasPrefix(link, "/") {
-			link = baseUrl + link
+			link = baseURL + link
 		}
 
 		if strings.HasPrefix(coverImageLink, "/") {
-			coverImageLink = baseUrl + coverImageLink
+			coverImageLink = baseURL + coverImageLink
 		}
 
-		newItem := RSSItem{
-			Title:       strings.TrimSpace(title),
+		item := RSSItem{
+			Title:       title,
 			Link:        link,
-			Description: strings.TrimSpace(description),
+			Description: description,
 			PubDate:     pubDate.Format(time.RFC822),
 			MediaContent: MediaContent{
 				URL:    coverImageLink,
 				Medium: "image",
 			},
 		}
-		newItems = append(newItems, newItem)
+		items = append(items, item)
 	})
-	return newItems
+
+	return items
 }
 
 func readExistingFeed(filename string) (*RSSDocument, error) {
-	// If feed file doesn't exist, return empty RSSDocument structure
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
 		return &RSSDocument{
 			Version:    "2.0",
-			XMLNSMedia: "http://search.yahoo.com/mrss/", // Add media namespace
+			XMLNSMedia: "http://search.yahoo.com/mrss/",
 			Channel: RSSChannel{
 				Title:       "Web Scraper Feed",
-				Description: "Automatically generated RSSDocument feed",
+				Description: "Automatically generated RSS feed",
 			},
 		}, nil
 	}
 
-	// Read existing feed file
 	data, err := os.ReadFile(filename)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to read feed file: %w", err)
 	}
 
 	var feed RSSDocument
-	err = xml.Unmarshal(data, &feed)
-	return &feed, err
+	if err := xml.Unmarshal(data, &feed); err != nil {
+		return nil, fmt.Errorf("failed to unmarshal feed file: %w", err)
+	}
+
+	return &feed, nil
 }
 
 func saveRSSFeed(filename string, feed *RSSDocument) error {
 	xmlData, err := xml.MarshalIndent(feed, "", "  ")
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to marshal RSS feed: %w", err)
 	}
 
-	xmlContent := []byte(xml.Header)
-	xmlContent = append(xmlContent, xmlData...)
+	xmlContent := append([]byte(xml.Header), xmlData...)
+	if err := os.WriteFile(filename, xmlContent, 0644); err != nil {
+		return fmt.Errorf("failed to write RSS feed to file: %w", err)
+	}
 
-	return os.WriteFile(filename, xmlContent, 0644)
+	return nil
 }
-func appendWithoutDuplicates(existingItems []RSSItem, newItems []RSSItem) []RSSItem {
-	existingLinks := make(map[string]struct{})
+
+func appendWithoutDuplicates(existingItems, newItems []RSSItem) []RSSItem {
+	existingLinks := make(map[string]struct{}, len(existingItems))
 	for _, item := range existingItems {
 		existingLinks[item.Link] = struct{}{}
 	}
@@ -116,28 +123,28 @@ func appendWithoutDuplicates(existingItems []RSSItem, newItems []RSSItem) []RSSI
 }
 
 func main() {
-	feedFileName := "feed.xml"
+	const feedFileName = "feed.xml"
 	websites := map[string]string{
 		"https://blog.bitdrift.dev": "article",
 	}
-	xmlFeed, err := readExistingFeed(feedFileName)
 
+	xmlFeed, err := readExistingFeed(feedFileName)
 	if err != nil {
-		log.Fatal(fmt.Errorf("error reading existing feed: %v", err))
+		log.Fatalf("Error reading existing feed: %v", err)
 	}
 
 	for url, locator := range websites {
 		content, err := fetchWebsiteContent(url)
 		if err != nil {
-			log.Fatal(err)
+			log.Printf("Error fetching content from %s: %v", url, err)
+			continue
 		}
-		parsedItems := parseArticles(url, content, locator)
 
+		parsedItems := parseArticles(url, content, locator)
 		xmlFeed.Channel.Items = appendWithoutDuplicates(xmlFeed.Channel.Items, parsedItems)
 	}
 
-	err = saveRSSFeed(feedFileName, xmlFeed)
-	if err != nil {
-		log.Fatal(fmt.Errorf("error saving RSS feed: %v", err))
+	if err := saveRSSFeed(feedFileName, xmlFeed); err != nil {
+		log.Fatalf("Error saving RSS feed: %v", err)
 	}
 }
