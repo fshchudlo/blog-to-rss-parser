@@ -41,11 +41,11 @@ func parseArticles(baseUrl string, doc *goquery.Document, locator string) []RSSI
 			pubDate, _ = time.Parse(time.RFC3339Nano, timeString)
 		}
 
-		if !strings.HasPrefix(link, "/") {
+		if strings.HasPrefix(link, "/") {
 			link = baseUrl + link
 		}
 
-		if !strings.HasPrefix(coverImageLink, "/") {
+		if strings.HasPrefix(coverImageLink, "/") {
 			coverImageLink = baseUrl + coverImageLink
 		}
 
