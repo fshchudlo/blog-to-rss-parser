@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Web Scraper Feed</title>
+    <link></link>
+    <description>Automatically generated RSSDocument feed</description>
+    <item>
+      <title>Announcing Alerting</title>
+      <link>https://blog.bitdrift.dev/post/announcing-alerting</link>
+      <description>Matt Klein</description>
+      <pubDate>19 Mar 25 18:40 UTC</pubDate>
+    </item>
+    <item>
+      <title>Observability 3.0</title>
+      <link>https://blog.bitdrift.dev/post/observability-3-0</link>
+      <description>Matt Klein</description>
+      <pubDate>18 Mar 25 14:38 UTC</pubDate>
+    </item>
+    <item>
+      <title>Warning! Do not try building bitdrift at home</title>
+      <link>https://blog.bitdrift.dev/post/dont-build-bitdrift</link>
+      <description>Matt Klein</description>
+      <pubDate>25 Feb 25 15:21 UTC</pubDate>
+    </item>
+    <item>
+      <title>Announcing Electron Support</title>
+      <link>https://blog.bitdrift.dev/post/announcing-electron</link>
+      <description>Matt Klein</description>
+      <pubDate>11 Feb 25 21:40 UTC</pubDate>
+    </item>
+    <item>
+      <title>Reality check: OpenTelemetry is not going to solve your observability woes</title>
+      <link>https://blog.bitdrift.dev/post/reality-check-otel</link>
+      <description>Matt Klein</description>
+      <pubDate>04 Feb 25 23:38 UTC</pubDate>
+    </item>
+  </channel>
+</rss>
