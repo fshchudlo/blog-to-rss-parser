@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Web Scraper Feed</title>
-    <link></link>
+    <link>https://fshchudlo.github.io/blog-to-rss-parser/feed.xml</link>
     <description>Automatically generated RSS feed</description>
     <item>
       <title>Reality check: OpenTelemetry is not going to solve your observability woes</title>

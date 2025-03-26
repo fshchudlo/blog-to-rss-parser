@@ -75,6 +75,7 @@ func readExistingFeed(filename string) (*RSSDocument, error) {
 			Channel: RSSChannel{
 				Title:       "Web Scraper Feed",
 				Description: "Automatically generated RSS feed",
+				Link:        "https://fshchudlo.github.io/blog-to-rss-parser/feed.xml",
 			},
 		}, nil
 	}
