@@ -56,7 +56,7 @@ func parseArticles(baseURL string, doc *goquery.Document, locator string) []RSSI
 			Link:        link,
 			Description: description,
 			PubDate:     pubDate.Format(time.RFC822),
-			MediaContent: MediaContent{
+			Media: MediaContent{
 				URL:    coverImageLink,
 				Medium: "image",
 			},
@@ -88,6 +88,10 @@ func readExistingFeed(filename string) (*RSSDocument, error) {
 	var feed RSSDocument
 	if err := xml.Unmarshal(data, &feed); err != nil {
 		return nil, fmt.Errorf("failed to unmarshal feed file: %w", err)
+	}
+
+	if feed.XMLNSMedia == "" {
+		feed.XMLNSMedia = "http://search.yahoo.com/mrss/"
 	}
 
 	return &feed, nil
