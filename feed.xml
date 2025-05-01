@@ -39,5 +39,19 @@
       <pubDate>11 Feb 25 21:40 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/7042871644824552548/assets/posts/announcing-electron/feature-blog_hero_image_18-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Tracking Android Apps Responsiveness with JankStats</title>
+      <link>https://blog.bitdrift.dev/post/jank-stats-integration</link>
+      <description>Fran Aguilera</description>
+      <pubDate>30 Apr 25 13:45 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11083091292545052636/assets/posts/jank-stats-integration/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Mobile tracing done right: introducing dynamic spans &amp; waterfall view</title>
+      <link>https://blog.bitdrift.dev/post/introducing-tracing</link>
+      <description>Matt Klein</description>
+      <pubDate>16 Apr 25 17:36 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11083091292545052636/assets/posts/introducing-tracing/feature-waterfalls-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
