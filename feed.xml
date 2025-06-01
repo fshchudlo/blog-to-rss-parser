@@ -53,5 +53,26 @@
       <pubDate>16 Apr 25 17:36 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11083091292545052636/assets/posts/introducing-tracing/feature-waterfalls-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>The Apple payments decision: a turning point for mobile observability?</title>
+      <link>https://blog.bitdrift.dev/post/payments-decision</link>
+      <description>Matt Klein</description>
+      <pubDate>27 May 25 13:52 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/5904971584345809684/assets/posts/payments-decision/feature-blog_hero_payments-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing unique device tracking, multiple group by, and table charts</title>
+      <link>https://blog.bitdrift.dev/post/announcing-unique</link>
+      <description>Matt Klein</description>
+      <pubDate>21 May 25 14:25 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/5904971584345809684/assets/posts/announcing-unique/feature-unique-devices-tooltip-hi-res-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>The complexity and importance of metric backfill in mobile observability</title>
+      <link>https://blog.bitdrift.dev/post/mobile-metric-backfill</link>
+      <description>Matt Klein</description>
+      <pubDate>05 May 25 14:38 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/5904971584345809684/assets/posts/mobile-metric-backfill/feature-pretty-charts-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
