@@ -74,5 +74,26 @@
       <pubDate>05 May 25 14:38 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/5904971584345809684/assets/posts/mobile-metric-backfill/feature-pretty-charts-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>The truth is out there (not in your backend)</title>
+      <link>https://blog.bitdrift.dev/post/the-truth-is-out-there</link>
+      <description>Iain Finlayson</description>
+      <pubDate>30 Jun 25 16:44 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16326107312370836223/assets/g/posts/the-truth-is-out-there/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing crash reporting: why have breadcrumbs when you can have the whole loaf?</title>
+      <link>https://blog.bitdrift.dev/post/announcing-crash-reporting</link>
+      <description>Matt Klein</description>
+      <pubDate>25 Jun 25 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16326107312370836223/assets/posts/announcing-crash-reporting/feature-blog_hero_image_21-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Why crash reporting tools don’t give you the full picture</title>
+      <link>https://blog.bitdrift.dev/post/why-crash-reporting-tools-wont-give-you-the-full-picture</link>
+      <description>Bitdrift Team</description>
+      <pubDate>12 Jun 25 15:05 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16326107312370836223/assets/posts/why-crash-reporting-tools-wont-give-you-the-full-picture/feature-blog_hero_image_8-3-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
