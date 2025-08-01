@@ -95,5 +95,33 @@
       <pubDate>12 Jun 25 15:05 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16326107312370836223/assets/posts/why-crash-reporting-tools-wont-give-you-the-full-picture/feature-blog_hero_image_8-3-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>No(more)QL</title>
+      <link>https://blog.bitdrift.dev/post/no-more-ql</link>
+      <description>Iain Finlayson</description>
+      <pubDate>29 Jul 25 14:55 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17324174451185985432/assets/g/posts/no-more-ql/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing custom dashboards</title>
+      <link>https://blog.bitdrift.dev/post/announcing-custom-dashboards</link>
+      <description>Matt Klein</description>
+      <pubDate>28 Jul 25 15:49 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17324174451185985432/assets/g/posts/announcing-custom-dashboards/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing SLO alerting</title>
+      <link>https://blog.bitdrift.dev/post/announcing-slo-alerting</link>
+      <description>Matt Klein</description>
+      <pubDate>17 Jul 25 18:40 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17324174451185985432/assets/posts/announcing-slo-alerting/feature-alerts-create-slo-alert-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing workflow timeout actions: observing silence</title>
+      <link>https://blog.bitdrift.dev/post/announcing-timeouts</link>
+      <description>Matt Klein</description>
+      <pubDate>07 Jul 25 18:10 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17324174451185985432/assets/g/posts/announcing-timeouts/feature-screenshot-workflow-timeout-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
