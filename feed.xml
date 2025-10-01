@@ -144,5 +144,19 @@
       <pubDate>08 Aug 25 14:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/8637631230194266270/assets/g/posts/hands-on-wikipedia-ios/feature-hero-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>The danger of sampled RUM data: what you don’t see _can_ hurt you</title>
+      <link>https://blog.bitdrift.dev/post/danger-of-sampled-rum-data</link>
+      <description>Aleš Koprivnikar</description>
+      <pubDate>29 Sep 25 13:04 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/4250756168903303120/assets/g/posts/danger-of-sampled-rum-data/feature-danger-of-sampled-rum-data-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Crashes are loud. Leaks are quiet.</title>
+      <link>https://blog.bitdrift.dev/post/memory-leaks</link>
+      <description>Iain Finlayson</description>
+      <pubDate>15 Sep 25 10:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/4250756168903303120/assets/g/posts/memory-leaks/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
