@@ -158,5 +158,40 @@
       <pubDate>15 Sep 25 10:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/4250756168903303120/assets/g/posts/memory-leaks/feature-hero-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Announcing crash reporting the way it should be: free &amp; full of context</title>
+      <link>https://blog.bitdrift.dev/post/announcing-free-crash-reporting</link>
+      <description>Matt Klein</description>
+      <pubDate>28 Oct 25 20:10 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/announcing-free-crash-reporting/feature-announce-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing workflow debugging</title>
+      <link>https://blog.bitdrift.dev/post/announcing-workflow-debugger</link>
+      <description>Matt Klein</description>
+      <pubDate>20 Oct 25 19:43 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/announcing-workflow-debugger/feature-debugger-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Optimizing bitdrift’s Rust mobile SDK for binary size</title>
+      <link>https://blog.bitdrift.dev/post/optimizing-rust-mobile-sdk-binary-size</link>
+      <description>Snow Pettersen</description>
+      <pubDate>14 Oct 25 13:27 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/optimizing-rust-mobile-sdk-binary-size/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Funnel cake: sweet insights with bitdrift funnels</title>
+      <link>https://blog.bitdrift.dev/post/funnel-cake</link>
+      <description>Iain Finlayson</description>
+      <pubDate>09 Oct 25 10:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/funnel-cake/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing stability insights</title>
+      <link>https://blog.bitdrift.dev/post/announcing-stability-insights</link>
+      <description>Matt Klein</description>
+      <pubDate>03 Oct 25 21:30 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/announcing-stability-insights/feature-insights-stability-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
