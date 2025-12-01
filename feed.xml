@@ -193,5 +193,12 @@
       <pubDate>03 Oct 25 21:30 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1797577606212068417/assets/g/posts/announcing-stability-insights/feature-insights-stability-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Introducing godot support (a.k.a. how we accidentally built an arcade machine)</title>
+      <link>https://blog.bitdrift.dev/post/introducing-godot-support</link>
+      <description>fz</description>
+      <pubDate>18 Nov 25 20:10 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/4614482295919533776/assets/g/posts/introducing-godot-support/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
