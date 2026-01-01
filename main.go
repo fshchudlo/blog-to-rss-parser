@@ -14,17 +14,23 @@ import (
 )
 
 func fetchWebsiteContent(url string) (*goquery.Document, error) {
-	resp, err := http.Get(url)
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+	resp, err := client.Get(url)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch website content: %w", err)
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("HTTP error: %d", resp.StatusCode)
+	}
+
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse website content: %w", err)
 	}
-
 	return doc, nil
 }
 
@@ -44,15 +50,23 @@ func parseArticles(baseURL string, doc *goquery.Document, locator string) []RSSI
 			}
 		}
 
+		articleLink, err := resolveRelativeUrl(baseURL, articleLink)
+		if err != nil {
+			log.Printf("Warning: failed to resolve URL %s: %v", articleLink, err)
+			return
+		}
+
 		item := RSSItem{
 			Title:       title,
-			Link:        resolveRelativeUrl(baseURL, articleLink),
+			Link:        articleLink,
 			Description: description,
 			PubDate:     pubDate.Format(time.RFC822),
 		}
+
+		coverImageLink, _ = resolveRelativeUrl(baseURL, coverImageLink)
 		if coverImageLink != "" {
 			item.Media = MediaContent{
-				URL:    resolveRelativeUrl(baseURL, coverImageLink),
+				URL:    coverImageLink,
 				Medium: "image",
 			}
 
@@ -123,21 +137,20 @@ func appendWithoutDuplicates(existingItems, newItems []RSSItem) []RSSItem {
 	return existingItems
 }
 
-func resolveRelativeUrl(basePath string, relativePath string) string {
+func resolveRelativeUrl(basePath string, relativePath string) (string, error) {
 	if !strings.HasPrefix(relativePath, "/") {
-		return relativePath
+		return relativePath, nil
 	}
 	baseUrl, err := url.Parse(basePath)
 	if err != nil {
-		panic(err)
+		return "", fmt.Errorf("invalid base URL: %w", err)
 	}
-
 	relativeUrl, err := url.Parse(relativePath)
 	if err != nil {
-		panic(err)
+		return "", fmt.Errorf("invalid relative URL: %w", err)
 	}
-
-	return baseUrl.ResolveReference(relativeUrl).String()
+	resolved := baseUrl.ResolveReference(relativeUrl)
+	return resolved.String(), nil
 }
 
 func main() {
