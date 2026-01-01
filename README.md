@@ -1,5 +1,5 @@
 # blog-to-rss-parser
-Simple script that parses websites without RSS and generates a static RSS feed for the articles. Then, this RSS is hosted with [GitHub pages](https://fshchudlo.github.io/blog-to-rss-parser/feed.xml) and can be used to agrregate RSS.
+Vibe-coded script that parses websites without RSS and generates a static RSS feed for the articles. Then, this RSS is hosted with [GitHub pages](https://fshchudlo.github.io/blog-to-rss-parser/feed.xml) and can be used to agrregate RSS.
 
 ## Development
 
