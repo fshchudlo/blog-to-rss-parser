@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
 	"strings"
 	"time"
@@ -31,8 +32,8 @@ func parseArticles(baseURL string, doc *goquery.Document, locator string) []RSSI
 	var items []RSSItem
 
 	doc.Find(locator).Each(func(i int, s *goquery.Selection) {
-		title := strings.TrimSpace(s.Find("h2").Text())
-		link, _ := s.Find("a").Attr("href")
+		title := strings.TrimSpace(s.Find("h1,h2,h3").Text())
+		articleLink, _ := s.Find("a").Attr("href")
 		description := strings.TrimSpace(s.Find("p").Text())
 		coverImageLink, _ := s.Find("img").Attr("src")
 		pubDate := time.Now()
@@ -43,23 +44,18 @@ func parseArticles(baseURL string, doc *goquery.Document, locator string) []RSSI
 			}
 		}
 
-		if strings.HasPrefix(link, "/") {
-			link = baseURL + link
-		}
-
-		if strings.HasPrefix(coverImageLink, "/") {
-			coverImageLink = baseURL + coverImageLink
-		}
-
 		item := RSSItem{
 			Title:       title,
-			Link:        link,
+			Link:        resolveRelativeUrl(baseURL, articleLink),
 			Description: description,
 			PubDate:     pubDate.Format(time.RFC822),
-			Media: MediaContent{
-				URL:    coverImageLink,
+		}
+		if coverImageLink != "" {
+			item.Media = MediaContent{
+				URL:    resolveRelativeUrl(baseURL, coverImageLink),
 				Medium: "image",
-			},
+			}
+
 		}
 		items = append(items, item)
 	})
@@ -127,10 +123,28 @@ func appendWithoutDuplicates(existingItems, newItems []RSSItem) []RSSItem {
 	return existingItems
 }
 
+func resolveRelativeUrl(basePath string, relativePath string) string {
+	if !strings.HasPrefix(relativePath, "/") {
+		return relativePath
+	}
+	baseUrl, err := url.Parse(basePath)
+	if err != nil {
+		panic(err)
+	}
+
+	relativeUrl, err := url.Parse(relativePath)
+	if err != nil {
+		panic(err)
+	}
+
+	return baseUrl.ResolveReference(relativeUrl).String()
+}
+
 func main() {
 	const feedFileName = "feed.xml"
 	websites := map[string]string{
-		"https://blog.bitdrift.dev": "article",
+		"https://www.anthropic.com/engineering": "main article article",
+		"https://blog.bitdrift.dev":             "article",
 	}
 
 	xmlFeed, err := readExistingFeed(feedFileName)
