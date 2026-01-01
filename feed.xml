@@ -200,5 +200,26 @@
       <pubDate>18 Nov 25 20:10 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/4614482295919533776/assets/g/posts/introducing-godot-support/feature-cover-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>10 reasons not to use bitdrift: 2, you like paying for logs you don’t use</title>
+      <link>https://blog.bitdrift.dev/post/reason-2-logging-costs</link>
+      <description>Iain Finlayson</description>
+      <pubDate>22 Dec 25 16:23 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/13550601568081312348/assets/g/posts/reason-2-logging-costs/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>10 reasons not to use bitdrift: 1, you love breadcrumbs</title>
+      <link>https://blog.bitdrift.dev/post/reason-1-breadcrumbs</link>
+      <description>Iain Finlayson</description>
+      <pubDate>12 Dec 25 16:07 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/13550601568081312348/assets/g/posts/reason-1-breadcrumbs/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing issue triaging</title>
+      <link>https://blog.bitdrift.dev/post/announcing-issue-triaging</link>
+      <description>Martin Güena</description>
+      <pubDate>10 Dec 25 14:32 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/13550601568081312348/assets/g/posts/announcing-issue-triaging/feature-triaging-cover-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
