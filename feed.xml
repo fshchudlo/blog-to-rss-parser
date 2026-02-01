@@ -333,5 +333,47 @@
       <pubDate>01 Jan 26 06:35 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/44e93e074d53285f64ff717365b04c4a2164a445-1200x1200.svg" medium="image"></content>
     </item>
+    <item>
+      <title>Designing AI-resistant technical evaluations</title>
+      <link>https://www.anthropic.com/engineering/AI-resistant-technical-evaluations</link>
+      <description>What we learned from three iterations of a performance engineering take-home that Claude keeps beating.</description>
+      <pubDate>01 Feb 26 01:52 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/097b92aa686c266a8fcdd890a491641273d3dae5-2554x2554.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>Demystifying evals for AI agents</title>
+      <link>https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents</link>
+      <description></description>
+      <pubDate>01 Feb 26 01:52 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/b87185e4d533134bc3f9b949a874396dcfcb2e80-500x500.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>What is OpenTelemetry, and what is it not?</title>
+      <link>https://blog.bitdrift.dev/post/what-is-opentelemetry</link>
+      <description>Steve Lerner</description>
+      <pubDate>29 Jan 26 15:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2625967412798555577/assets/posts/what-is-opentelemetry/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing feature flag support</title>
+      <link>https://blog.bitdrift.dev/post/announcing-feature-flags</link>
+      <description>Snow Pettersen</description>
+      <pubDate>27 Jan 26 12:47 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2625967412798555577/assets/g/posts/announcing-feature-flags/feature-feature-flags-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>10 reasons not to use bitdrift: 3, you like tools that were built for server apps</title>
+      <link>https://blog.bitdrift.dev/post/reason-3-server-tools</link>
+      <description>Iain Finlayson</description>
+      <pubDate>13 Jan 26 17:15 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2625967412798555577/assets/g/posts/reason-3-server-tools/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing workflow TTLs</title>
+      <link>https://blog.bitdrift.dev/post/announcing-workflow-ttls</link>
+      <description>Matt Klein</description>
+      <pubDate>05 Jan 26 16:33 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2625967412798555577/assets/g/posts/announcing-workflow-ttls/feature-ttls-cover-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
