@@ -375,5 +375,47 @@
       <pubDate>05 Jan 26 16:33 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2625967412798555577/assets/g/posts/announcing-workflow-ttls/feature-ttls-cover-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Quantifying infrastructure noise in agentic coding evals</title>
+      <link>https://www.anthropic.com/engineering/infrastructure-noise</link>
+      <description>Infrastructure configuration can swing agentic coding benchmarks by several percentage points—sometimes more than the leaderboard gap between top models.</description>
+      <pubDate>01 Mar 26 01:51 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/d428d11fcf4123ff0d0859d03fba459ad4d3d01a-2554x2554.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>Building a C compiler with a team of parallel Claudes</title>
+      <link>https://www.anthropic.com/engineering/building-c-compiler</link>
+      <description></description>
+      <pubDate>01 Mar 26 01:51 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/44e93e074d53285f64ff717365b04c4a2164a445-1200x1200.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>10 reasons not to use bitdrift: 5, you don’t want to risk the migration</title>
+      <link>https://blog.bitdrift.dev/post/reason-5-migration</link>
+      <description>Iain Finlayson</description>
+      <pubDate>25 Feb 26 14:42 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1053856197636589172/assets/g/posts/reason-5-migration/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing histogram bar charts</title>
+      <link>https://blog.bitdrift.dev/post/announcing-histogram-bar-charts</link>
+      <description>Matt Klein</description>
+      <pubDate>24 Feb 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1053856197636589172/assets/g/posts/announcing-histogram-bar-charts/feature-bar-chart-histogram-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Mobile Session Replay: built for real observability</title>
+      <link>https://blog.bitdrift.dev/post/mobile-session-replay</link>
+      <description>Collin</description>
+      <pubDate>19 Feb 26 14:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1053856197636589172/assets/posts/mobile-session-replay/feature-mobile-session-replay-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>10 reasons not to use bitdrift: 4, you only care about crashes</title>
+      <link>https://blog.bitdrift.dev/post/reason-4-crashes</link>
+      <description>Iain Finlayson</description>
+      <pubDate>04 Feb 26 14:42 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1053856197636589172/assets/g/posts/reason-4-crashes/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
