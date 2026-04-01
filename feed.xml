@@ -417,5 +417,61 @@
       <pubDate>04 Feb 26 14:42 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1053856197636589172/assets/g/posts/reason-4-crashes/feature-hero-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Claude Code auto mode: a safer way to skip permissions</title>
+      <link>https://www.anthropic.com/engineering/claude-code-auto-mode</link>
+      <description></description>
+      <pubDate>01 Apr 26 02:04 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/b87185e4d533134bc3f9b949a874396dcfcb2e80-500x500.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>Harness design for long-running application development</title>
+      <link>https://www.anthropic.com/engineering/harness-design-long-running-apps</link>
+      <description></description>
+      <pubDate>01 Apr 26 02:04 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/af0acebfbd57ac4b26ae7d7ae124d7326a3e47e4-1200x1200.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>Eval awareness in Claude Opus 4.6’s BrowseComp performance</title>
+      <link>https://www.anthropic.com/engineering/eval-awareness-browsecomp</link>
+      <description></description>
+      <pubDate>01 Apr 26 02:04 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/641d32b3291956d595c7e820d5bf94c5f44baa28-500x500.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>bitdrift turns 1,000,000,000</title>
+      <link>https://blog.bitdrift.dev/post/bitdrift-turns-1-billion</link>
+      <description>Matt Klein</description>
+      <pubDate>31 Mar 26 15:27 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/g/posts/bitdrift-turns-1-billion/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>A sneak peek at our new Workflows UI</title>
+      <link>https://blog.bitdrift.dev/post/new-workflows-ui</link>
+      <description>Iain Finlayson</description>
+      <pubDate>26 Mar 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/posts/new-workflows-ui/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Critical User Journeys: Where revenue optimization &amp; application debugging unite</title>
+      <link>https://blog.bitdrift.dev/post/critical-user-journeys</link>
+      <description>Justin Arrington</description>
+      <pubDate>19 Mar 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/posts/critical-user-journeys/feature-blog_hero_image_22-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>User experience signals to log for mobile observability</title>
+      <link>https://blog.bitdrift.dev/post/mobile-logging-ux-signals</link>
+      <description>Collin</description>
+      <pubDate>16 Mar 26 13:44 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/g/posts/mobile-logging-ux-signals/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing Bring Your Own Cloud (BYOC) for mobile observability</title>
+      <link>https://blog.bitdrift.dev/post/announcing-byoc</link>
+      <description>Matt Klein</description>
+      <pubDate>03 Mar 26 15:17 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/g/posts/announcing-byoc/feature-byoc_hero-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
