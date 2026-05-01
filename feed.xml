@@ -473,5 +473,54 @@
       <pubDate>03 Mar 26 15:17 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2107459780876502933/assets/g/posts/announcing-byoc/feature-byoc_hero-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>An update on recent Claude Code quality reports</title>
+      <link>https://www.anthropic.com/engineering/april-23-postmortem</link>
+      <description>We traced recent reports of Claude Code quality issues to three separate changes. Here&#39;s what happened and what we&#39;re changing.</description>
+      <pubDate>01 May 26 02:35 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="" medium=""></content>
+    </item>
+    <item>
+      <title>Scaling Managed Agents: Decoupling the brain from the hands</title>
+      <link>https://www.anthropic.com/engineering/managed-agents</link>
+      <description></description>
+      <pubDate>01 May 26 02:35 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/7675e9c4ed4c7a8fe2e4df296fd1c4adac5b652b-1200x1200.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>Let your agents query reality</title>
+      <link>https://blog.bitdrift.dev/post/query-reality-ai-observability</link>
+      <description>Pete Morelli</description>
+      <pubDate>27 Apr 26 00:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/query-reality-ai-observability/feature-ai-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing OpenTelemetry mobile tracing (that actually works)</title>
+      <link>https://blog.bitdrift.dev/post/opentelemetry-mobile-tracing</link>
+      <description>Matt Klein</description>
+      <pubDate>24 Apr 26 13:54 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/opentelemetry-mobile-tracing/feature-tracing-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Device performance signals to log for mobile observability</title>
+      <link>https://blog.bitdrift.dev/post/mobile-logging-device-performance-signals</link>
+      <description>Collin</description>
+      <pubDate>23 Apr 26 00:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/mobile-logging-device-performance-signals/feature-cover-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Introducing the bitdrift Public API: For programmable observability and beyond</title>
+      <link>https://blog.bitdrift.dev/post/public-api</link>
+      <description>Iain Finlayson</description>
+      <pubDate>20 Apr 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/public-api/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Now available in AWS Marketplace, bitdrift delivers enterprise-ready mobile observability without friction</title>
+      <link>https://blog.bitdrift.dev/post/aws-marketplace</link>
+      <description>Bitdrift Team</description>
+      <pubDate>13 Apr 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/aws-marketplace/feature-blog_hero_image_28-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
