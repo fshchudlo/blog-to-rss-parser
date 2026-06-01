@@ -522,5 +522,26 @@
       <pubDate>13 Apr 26 12:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/1356787409836364874/assets/posts/aws-marketplace/feature-blog_hero_image_28-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>How we contain Claude across products</title>
+      <link>https://www.anthropic.com/engineering/how-we-contain-claude</link>
+      <description>As agents grow more capable, so does their potential blast radius. The engineering question is how to cap it. Here’s what we’ve learned building containment for claude.ai, Claude Code, and Cowork.</description>
+      <pubDate>01 Jun 26 03:30 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://www-cdn.anthropic.com/images/4zrzovbb/website/47d14a71a7a759af39e1bc36ee68d65eb16ad74d-1000x1000.svg" medium="image"></content>
+    </item>
+    <item>
+      <title>AI-driven instrumentation made possible with new mobile SDK skill</title>
+      <link>https://blog.bitdrift.dev/post/skill-that-instruments-mobile-sdk</link>
+      <description>Collin</description>
+      <pubDate>28 May 26 00:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16139027982257436725/assets/posts/skill-that-instruments-mobile-sdk/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Mobile teams: Log these app behavior signals to avoid blindspots</title>
+      <link>https://blog.bitdrift.dev/post/mobile-logging-app-behavior-signals</link>
+      <description>Collin</description>
+      <pubDate>07 May 26 00:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16139027982257436725/assets/posts/mobile-logging-app-behavior-signals/feature-blog_hero_image_24-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
