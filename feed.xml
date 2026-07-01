@@ -543,5 +543,19 @@
       <pubDate>07 May 26 00:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/16139027982257436725/assets/posts/mobile-logging-app-behavior-signals/feature-blog_hero_image_24-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Agentic investigation with bitdrift: Why is my conversion rate dropping?</title>
+      <link>https://blog.bitdrift.dev/post/agentic-investigation-conversion</link>
+      <description>Collin</description>
+      <pubDate>19 Jun 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17832004548916613723/assets/posts/agentic-investigation-conversion/feature-blog_hero_image_33-1-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Introducing entities: Real-time debugging for individual users</title>
+      <link>https://blog.bitdrift.dev/post/entities</link>
+      <description>Matt Klein</description>
+      <pubDate>17 Jun 26 15:13 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17832004548916613723/assets/posts/entities/feature-cover-entities-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
