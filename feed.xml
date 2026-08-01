@@ -557,5 +557,19 @@
       <pubDate>17 Jun 26 15:13 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/17832004548916613723/assets/posts/entities/feature-cover-entities-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>How to use AI to instrument your mobile app for observability</title>
+      <link>https://blog.bitdrift.dev/post/ai-to-instrument-app</link>
+      <description>Steve Lerner</description>
+      <pubDate>24 Jul 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/7633276996563315959/assets/posts/ai-to-instrument-app/feature-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Reducing Android JVM allocations for less memory pressure and faster logs</title>
+      <link>https://blog.bitdrift.dev/post/reducing-android-jvm-allocations</link>
+      <description>Fran Aguilera</description>
+      <pubDate>02 Jul 26 00:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/7633276996563315959/assets/posts/reducing-android-jvm-allocations/feature-jvm-alloc-reduction-hero-image-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
