@@ -571,5 +571,33 @@
       <pubDate>02 Jul 26 00:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/7633276996563315959/assets/posts/reducing-android-jvm-allocations/feature-jvm-alloc-reduction-hero-image-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>6 things mobile engineering teams wish they knew earlier</title>
+      <link>https://blog.bitdrift.dev/post/6-mobile-engineering-lessons</link>
+      <description>Collin</description>
+      <pubDate>25 Aug 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/14312823492567022883/assets/posts/no-one-talks-about-mobile-observability/feature-talk_about_mobile_observability_blog_image-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Introducing bitdrift AI: the world’s first agentic mobile observability platform</title>
+      <link>https://blog.bitdrift.dev/post/introducing-bitdrift-ai</link>
+      <description>Pete Morelli</description>
+      <pubDate>19 Aug 26 15:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/14312823492567022883/assets/posts/query-reality-ai-observability/feature-ai-hero-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Introducing scripting workflows for smarter debugging</title>
+      <link>https://blog.bitdrift.dev/post/introducing-scripting-workflows-for-smarter-debugging</link>
+      <description>delisa</description>
+      <pubDate>18 Aug 26 10:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/14312823492567022883/assets/posts/introducing-scripting-workflows-for-smarter-debugging/feature-script_workflow-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>bitdrift brings ClickHouse-powered mobile observability to ClickStack</title>
+      <link>https://blog.bitdrift.dev/post/clickhouse-integration</link>
+      <description>Steve Lerner</description>
+      <pubDate>11 Aug 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/14312823492567022883/assets/posts/clickhouse-integration/feature-blog_hero_image_34-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
