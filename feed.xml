@@ -599,5 +599,19 @@
       <pubDate>11 Aug 26 12:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/14312823492567022883/assets/posts/clickhouse-integration/feature-blog_hero_image_34-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>Announcing blob-stream: a Kafka alternative for no fuss, low cost high volume streaming</title>
+      <link>https://blog.bitdrift.dev/post/blob-stream-kafka-alternative</link>
+      <description>Matt Klein</description>
+      <pubDate>28 Sep 26 19:11 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11631390836800381085/assets/posts/blob-stream-kafka-alternative/feature-blob-stream-blog-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Announcing out-of-memory reporting in iOS</title>
+      <link>https://blog.bitdrift.dev/post/oom-reporting-ios</link>
+      <description>Ariel Demarco</description>
+      <pubDate>22 Sep 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11631390836800381085/assets/posts/oom-reporting-ios/feature-oom-timeline-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
