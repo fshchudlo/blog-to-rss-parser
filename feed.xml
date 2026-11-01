@@ -613,5 +613,33 @@
       <pubDate>22 Sep 26 12:00 UTC</pubDate>
       <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/11631390836800381085/assets/posts/oom-reporting-ios/feature-oom-timeline-mobile@1x.webp" medium="image"></content>
     </item>
+    <item>
+      <title>From CLI to MCP: building agent access for the cloud</title>
+      <link>https://blog.bitdrift.dev/post/from-cli-to-mcp</link>
+      <description>Snow Pettersen</description>
+      <pubDate>28 Oct 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2767476655122760887/assets/posts/from-cli-to-mcp/feature-blog_hero_image_38-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>bitdrift&#39;s MCP server brings always-on agentic investigations to your whole team</title>
+      <link>https://blog.bitdrift.dev/post/mcp</link>
+      <description>Miguel Juárez López</description>
+      <pubDate>28 Oct 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2767476655122760887/assets/posts/mcp/feature-mcp-launch-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>Finding the unknown unknowns in mobile app performance and availability</title>
+      <link>https://blog.bitdrift.dev/post/unknown-unknowns-mobile-observability</link>
+      <description>Steve Lerner</description>
+      <pubDate>23 Oct 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2767476655122760887/assets/posts/unknown-unknowns-mobile-observability/feature-unknown-unknowns-mobile@1x.webp" medium="image"></content>
+    </item>
+    <item>
+      <title>End-to-end observability is not mobile-to-backend observability</title>
+      <link>https://blog.bitdrift.dev/post/end-to-end-observability</link>
+      <description>Iain Finlayson</description>
+      <pubDate>01 Oct 26 12:00 UTC</pubDate>
+      <content xmlns="http://search.yahoo.com/mrss/" url="https://blog.bitdrift.dev/v/2767476655122760887/assets/posts/end-to-end-observability/feature-end-to-end-observability-mobile@1x.webp" medium="image"></content>
+    </item>
   </channel>
 </rss>
